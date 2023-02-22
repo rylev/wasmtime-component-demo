@@ -27,7 +27,6 @@ Then run the demo:
 cargo run markdown-component.wasm
 ```
 
-
 ## Thanks
 
 Thank you to everyone who is working on WebAssembly tooling.

@@ -6,7 +6,8 @@ struct MarkdownImpl;
 export_markdown!(MarkdownImpl);
 
 impl Markdown for MarkdownImpl {
-    fn render(input: String) -> String {
+    fn render() -> String {
+        let input = readline();
         let parser = Parser::new(&input);
         let mut html_output = String::new();
         html::push_html(&mut html_output, parser);

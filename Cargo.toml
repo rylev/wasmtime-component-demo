@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", rev = "6e6a1034d73b10775f41b7bcd5675815021d3510", features = ["component-model"] }
+anyhow = "1.0"
 
 [workspace]
 members = ["crates/*"]

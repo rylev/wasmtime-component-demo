@@ -1,4 +1,5 @@
 default world markdown {
-  export render: func(input: string) -> string
+  import readline: func() -> string
+  export render: func() -> string
 }
 
