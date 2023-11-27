@@ -1,11 +1,15 @@
 use pulldown_cmark::{html, Parser};
 
-wit_bindgen::generate!("markdown");
+wit_bindgen::generate!({
+    path: "wit",
+    exports: {
+        world: MarkdownImpl
+    }
+});
 
 struct MarkdownImpl;
-export_markdown!(MarkdownImpl);
 
-impl Markdown for MarkdownImpl {
+impl Guest for MarkdownImpl {
     fn render() -> String {
         let input = readline();
         let parser = Parser::new(&input);

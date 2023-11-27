@@ -1,5 +1,6 @@
-default world markdown {
-  import readline: func() -> string
-  export render: func() -> string
+package rylev:example;
+world markdown {
+  import readline: func() -> string;
+  export render: func() -> string;
 }
 
